@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { Toaster } from "./components/ui/Toaster";
 
 const poppin = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -9,8 +10,8 @@ const poppin = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "DiamondTV",
-  description: "All about your favorites movies & tv shows",
+  title: "Science Fiction/Fantasy",
+  description: "For the people who love fantasy",
 };
 
 export default function RootLayout({
@@ -24,6 +25,8 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+
+        <Toaster />
       </body>
     </html>
   );
