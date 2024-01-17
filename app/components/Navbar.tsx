@@ -8,25 +8,28 @@ const links = [
     link: "/",
   },
   {
-    title: "Movies",
-    link: "/movies",
+    title: "Browse",
+    link: "/browse",
   },
   {
-    title: "TV Shows",
-    link: "/tv",
+    title: "My Collection",
+    link: "/collection",
   },
 ];
 
 export default function Navbar() {
   return (
-    <div className="flex items-center py-6 bg-slate-900">
-      <Link href="/">
+    <div className="flex items-center h-24 bg-neutral-100">
+      {/* <Link href="/">
         <Icons.logo className="translate-x-4 ml-auto cursor-pointer" />
-      </Link>
-      <ul className="flex mx-auto text-amber-100 gap-4 cursor-pointer">
+      </Link> */}
+      <ul className="flex mx-auto font-semibold gap-4 cursor-pointer">
         {links.map((link) => (
           <li className="link link-underline" key={link.title}>
-            <a className="hover:text-white" href={link.link}>
+            <a
+              className="text-black hover:text-[#c8b806] transition-colors duration-150"
+              href={link.link}
+            >
               {link.title}
             </a>
           </li>

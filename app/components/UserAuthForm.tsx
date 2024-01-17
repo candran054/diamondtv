@@ -25,7 +25,7 @@ export default function UserAuthForm({
     } catch (error) {
       toast({
         title: "Error",
-        description: "There was an error loggin in with Google",
+        description: "There was an error login in with Google",
         variant: "destructive",
       });
     } finally {
@@ -44,6 +44,7 @@ export default function UserAuthForm({
         disabled={isLoading}
       >
         {isLoading ? null : <Icons.google className="h-4 w-4 mr-2" />}
+        Google
       </Button>
     </div>
   );
