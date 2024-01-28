@@ -12,7 +12,7 @@ export const Icons = {
       stroke="currentColor"
       stroke-width="2"
       stroke-linecap="round"
-      color={`rgba(254 243 199)`}
+      color={`rgb(185, 28, 28)`}
       stroke-linejoin="round"
       // className="lucide lucide-gem"
     >
